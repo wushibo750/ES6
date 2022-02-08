@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a;
+    let b,c,d;
+    let e=100;
+    let f=521;
+    //1.变量不能重复声明
+    //2.块级作用域
+    //if else while for后面的也是块级作用域
+    {
+        let girl='wushibo';
+        //Uncaught ReferenceError: girl is not defined
+    }
+    console.log(girl);
+    //3.不存在变量提升（使用在前，定义在后）
+    console.log(song);
+    let song='中国';
+    //4.不影响作用域链
+    {
+        let school='尚硅谷';
+        function fn(){
+            console.log(school);
+        }
+        fu();
+    }
+</script>
+
+
+</body>
+</html>

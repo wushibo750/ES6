@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //ES6中的函数写法
+    let name='尚硅谷';
+    //function change(): void
+    let change=function (){
+        console.log('wushibo');
+    }
+    //完整写法
+ /*   const school={
+        name:name,
+        change:change
+    }*/
+    //简化写法
+    const school={
+        name,
+        change,
+    }
+    console.log(school);
+</script>
+
+</body>
+</html>
