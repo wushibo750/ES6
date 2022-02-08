@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //ES5获取实参的方式
+  //Arguments是对象
+  //Array是数组
+  function date1(){
+    console.log(arguments);
+  }
+  date1('12','13','14');
+  //rest 参数
+  function date(...args){
+    console.log(args);
+  }
+  date('demo1','demo2','demo2');
+  //rest参数必须要放到参数最后
+  function fn(a,b,...args){
+      console.log(a);
+      console.log(b);
+      console.log(args);
+  }
+  fn(1,2,3,4,5,6);
+</script>
+</body>
+</html>

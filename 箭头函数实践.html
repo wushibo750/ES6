@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div{
+      width:200px;
+      height: 200px;
+      background-color: aqua;
+    }
+
+  </style>
+</head>
+<body>
+<div id="ad">
+
+</div>
+<script>
+  let ad=document.getElementById('ad');
+  //绑定事件
+  ad.addEventListener("click",function (){
+    let that=this;
+    setTimeout(function (){
+      console.log(that);
+      that.style.background='pink';
+    },1000)
+  })
+  //箭头函数适合于this无关的回调，定时器，数组的方法回调
+  //箭头函数不适合于this有关的回调，事件对调，对象的方法
+
+</script>
+</body>
+</html>
